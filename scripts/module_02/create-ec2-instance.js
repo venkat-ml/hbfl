@@ -91,11 +91,12 @@ function createKeyPair(keyName) {
   })
 }
 
-function createInstance(sgName) {
+function createInstance(sgName, keyName) {
   // TODO: create ec2 instance
   const params = {
-    ImageId: 'ami-06202e06492f46177',
+    ImageId: 'ami-06202e06492f46177',  // AMI of linux 8GB machine in ap-southeast-2 zone
     InstanceType: 't2.micro',
+    KeyName: keyName,
     MaxCount: 1,
     MinCount: 1,
     SecurityGroups: [

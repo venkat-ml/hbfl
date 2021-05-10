@@ -2,7 +2,6 @@
 // TODO: Import the aws-sdk
 const AWS = require('aws-sdk')
 const EC2 = require('aws-sdk/clients/ec2')
-const { Promise } = require('bluebird')
 
 // TODO: Configure region
 AWS.config.update({ region: 'ap-southeast-2' })
@@ -47,5 +46,5 @@ function terminateInstance(instanceId) {
 listInstances()
   .then(data => console.log(data))
 
-terminateInstance('i-0fa160868442def48')
-  .then(data => console.log(data))
+// terminateInstance('i-0fa160868442def48')
+//   .then(data => console.log(data))

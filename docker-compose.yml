@@ -7,3 +7,4 @@ services:
     volumes:
       - ~/.aws:/root/.aws
       - ./scripts:/home/hbfl/scripts
+      - ./.git:/home/hbfl/.git
