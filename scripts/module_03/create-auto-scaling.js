@@ -15,9 +15,9 @@ const lcName = 'hamsterLC'
 const policyName = 'hamsterPolicy'
 //const tgArn = '/* TODO: get target group ARN */'
 
-elbv2.describeLoadBalancers({}, (err, data) => {
-  err ? console.log(err, err.stack) : console.log(data.LoadBalancers[0].LoadBalancerArn);
-});
+// elbv2.describeLoadBalancers({}, (err, data) => {
+//   err ? console.log(err, err.stack) : console.log(data.LoadBalancers[0].LoadBalancerArn);
+// });
 
 function getTargetgroupArn() {
 
